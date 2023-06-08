@@ -20,7 +20,7 @@ core_client = oci.core.ComputeClient(config)
 # Send the request to service, some parameters are not required, see API
 # doc for more info
 list_instances_response = core_client.list_instances(
-    compartment_id="ocid1.tenancy.oc1..aaaaaaaa",
+    compartment_id="ocid1.compartment.oc1..aaaaaaaa",
     availability_domain="gxrT:US-ASHBURN-AD-3",
     lifecycle_state="RUNNING")
 
