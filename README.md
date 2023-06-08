@@ -15,6 +15,8 @@ Group by adding date condition.
 
  - **createMultipleBlockVolume.py** --> This file helps in creating Multiple Block Volumes in a single call.
 
+ - **createMultipleBlockVolume.py** --> This file helps in listing and deleting multiple compute instances at a time from a specific compartment & availability domain.
+
 
 
 
