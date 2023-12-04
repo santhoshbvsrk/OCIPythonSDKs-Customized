@@ -17,7 +17,7 @@ Group by adding date condition.
 
  - **createMultipleBlockVolume.py** --> This file helps in listing and deleting multiple compute instances at a time from a specific compartment & availability domain.
 
-
+ - **createVMFromBootVolAndAttachBlockVol.py** --> This file helps in creating a Virtual Machine from Boot Volume and attaching a Block Volume to it.
 
 
 ## NOTE
