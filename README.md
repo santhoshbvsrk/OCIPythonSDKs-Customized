@@ -19,6 +19,13 @@ Group by adding date condition.
 
  - **createVMFromBootVolAndAttachBlockVol.py** --> This file helps in creating a Virtual Machine from Boot Volume and attaching a Block Volume to it.
 
+ - **ActivateBootBlockReplicas_CreateVM_AttachBlockVolume.py** --> This file completes the below steps in a single click
+      1.	Create Boot Volume from BootVolumeReplica in DC/DR.
+      2.	Create Block Volume from BlockVolumeReplica in DC/DR.
+      3.	Create VM/Compute/Instance in DC/DR from the Boot Volume created in Step1.
+      4.	Attach the Block Volume created in Step2.
+
+
 
 ## NOTE
 
