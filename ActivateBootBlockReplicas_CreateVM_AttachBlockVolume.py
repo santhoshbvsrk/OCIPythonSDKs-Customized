@@ -75,7 +75,7 @@ print('Block Volume created from BlockVolumeReplica with id:',get_blockvol_data.
 compute_client = ComputeClient(config)
 
 # Create VNIC Details
-vnic_details = CreateVnicDetails(subnet_id=InputData_VM.subnet_id, assign_public_ip=True)
+vnic_details = CreateVnicDetails(subnet_id=InputData_VM.subnet_id, assign_public_ip=InputData_VM.vm_assign_public_ip,private_ip=InputData_VM.vm_private_ip)
 
 # Boot Volume Details
 boot_volume_details = InstanceSourceViaBootVolumeDetails(boot_volume_id=create_bootvol_response.id)
