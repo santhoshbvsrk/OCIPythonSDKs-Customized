@@ -11,6 +11,8 @@ create_boot_type = "bootVolumeReplica"
 boot_vol_name = "<BootVolumeName>"
 boot_vol_size_in_gbs = <BootVolumeSizeInGB>
 boot_vol_vpus_per_gb = <VolumePerformanceUnitsInGB>
+bootvolreplica_availability_domain = '<ReplicaRegionAD>'
+bootvolreplica_name = '<BootVolumeReplicaName>'
 
 #Block Volume related fields
 block_vol_replica_id = "ocid1.blockvolumereplica."
@@ -18,6 +20,8 @@ block_vol_attachment_type = "iscsi"
 block_vol_name = "<BlockVolumeName>"
 blockvol_vpus_per_gb = <BlockVolumeSizeInGB>
 blockvol_size_in_gbs = <VolumePerformanceUnitsInGB>
+blockvolreplica_availability_domain = '<ReplicaRegionAD>'
+blockvolreplica_name = '<BlockVolumeReplicaName>'
 
 #Compute related fields
 vm_display_name="<Compute/VM/Instance Name>"
