@@ -19,9 +19,10 @@ block_vol_replica_ocid = {'block_vol_name' : ['<BlockVolumeName>','<BlockVolumeN
                           'blockvol_vpus_per_gb' : [<BlockVolumePerformance>,<BlockVolumePerformance>,<BlockVolumePerformance>],
                           'blockvol_size_in_gbs' : [<BlockVolumeSize>,<BlockVolumeSize>,<BlockVolumeSize>],
                           'block_vol_replica_id' : ['ocid1.blockvolumereplica.','ocid1.blockvolumereplica.','ocid1.blockvolumereplica.'],
-                          'blockvolreplica_name' : ['<BlockVolumeReplicaName>','<BlockVolumeReplicaName>','<BlockVolumeReplicaName>']
+                          'blockvolreplica_name' : ['<BlockVolumeReplicaName>','<BlockVolumeReplicaName>','<BlockVolumeReplicaName>'],
+                          'block_vol_attachment_type' : ['<blockvolattachmenttype>','<blockvolattachmenttype>','<blockvolattachmenttype>']
                           }
-block_vol_attachment_type = "iscsi"
+#block_vol_attachment_type = "iscsi"
 #block_vol_name = "<BlockVolumeName>"
 #blockvol_vpus_per_gb = <BlockVolumePerformanceUnits>
 #blockvol_size_in_gbs = <BlockVolumeSize>
@@ -37,6 +38,6 @@ vm_assign_public_ip=False
 vm_private_ip="10.0.1.10"
 
 #Attach Multiple Block Volume Input Data -- AttachMultipleBlockVolume.py
-inst_vol_ocid = {'instance_ocid' : ['','',''],
-              'volume_ocid' : ['ocid1.volume.','ocid1.volume.','ocid1.volume.'],
-              'type' : ['iscsi','iscsi','iscsi']}
+#inst_vol_ocid = {'instance_ocid' : ['','',''],
+#              'volume_ocid' : ['ocid1.volume.','ocid1.volume.','ocid1.volume.'],
+#              'type' : ['iscsi','iscsi','iscsi']}
