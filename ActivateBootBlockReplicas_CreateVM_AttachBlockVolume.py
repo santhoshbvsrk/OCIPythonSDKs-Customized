@@ -53,7 +53,11 @@ create_volume_response = core_client.create_volume(
         source_details=oci.core.models.VolumeSourceFromBlockVolumeReplicaDetails(
             type="blockVolumeReplica",
             id=InputData_VM.block_vol_replica_id),
-        is_auto_tune_enabled=InputData_VM.is_auto_tune_enabled
+        is_auto_tune_enabled=InputData_VM.is_auto_tune_enabled,
+        block_volume_replicas=[
+            BlockVolumeReplicaDetails(
+                availability_domain=InputData_VM.blockvolreplica_availability_domain,
+                display_name=InputData_VM.blockvolreplica_name)]
     )
 )
 
