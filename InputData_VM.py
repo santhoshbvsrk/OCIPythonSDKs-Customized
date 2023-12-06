@@ -25,3 +25,5 @@ vm_shape="<Compute/VM/Instance Shape>"
 #if creating VM with Flex shapes, please provide the details of OCPUs & Memory
 vm_ocpus=<ComputeOCPUs>
 vm_memory_in_gbs=<ComputeMemory>
+vm_assign_public_ip=<True/False>
+vm_private_ip="<privateIPforYourVM>" #this is optional and is to be populated if you want the same IP for VM which you are creating from BootVol
