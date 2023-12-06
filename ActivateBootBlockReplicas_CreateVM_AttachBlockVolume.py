@@ -3,7 +3,7 @@ import InputData_VM
 import time
 import oci
 from oci.config import from_file
-from oci.core.models import CreateVnicDetails, InstanceSourceViaBootVolumeDetails, LaunchInstanceDetails, LaunchInstanceShapeConfigDetails, AttachVolumeDetails, CreateBootVolumeDetails , BootVolumeSourceFromBootVolumeDetails, CreateVolumeDetails
+from oci.core.models import CreateVnicDetails, InstanceSourceViaBootVolumeDetails, LaunchInstanceDetails, LaunchInstanceShapeConfigDetails, AttachVolumeDetails, CreateBootVolumeDetails , BootVolumeSourceFromBootVolumeDetails, CreateVolumeDetails, BlockVolumeReplicaDetails, BootVolumeReplicaDetails
 from oci.core import BlockstorageClient
 from oci.core import ComputeClient
 
@@ -25,6 +25,10 @@ create_boot_volume_response = core_client.create_boot_volume(
         size_in_gbs=InputData_VM.boot_vol_size_in_gbs,
         vpus_per_gb=InputData_VM.boot_vol_vpus_per_gb,
         is_auto_tune_enabled=InputData_VM.is_auto_tune_enabled,
+        boot_volume_replicas=[
+            oci.core.models.BootVolumeReplicaDetails(
+                availability_domain=InputData_VM.bootvolreplica_availability_domain,
+                display_name=InputData_VM.bootvolreplica_name)]
         )
 )
 
