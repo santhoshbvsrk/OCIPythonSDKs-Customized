@@ -17,3 +17,7 @@ multibv_vol_ids =['ocid1.volume.','ocid1.volume.','ocid1.volume.']
 #Assign Users to Group
 GroupOCID = 'ocid1.group.'
 tenancy_id='ocid1.tenancy.'
+
+#Delete Multiple VMs
+#Attach Multiple Block Volume Input Data -- AttachMultipleBlockVolume.py
+inst_ocid ={'instance_ocid' : ['ocid1.instance.','ocid1.instance.','ocid1.instance.','ocid1.instance.']}
