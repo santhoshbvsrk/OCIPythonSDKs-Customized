@@ -124,7 +124,7 @@ for i in range(len(blkvolocid['block_vol_replica_id'])):
 
     attach_volume_response = core_client1.attach_volume(
         attach_volume_details=AttachVolumeDetails(
-            type=InputData_Block_Boot_VM.block_vol_attachment_type,
+            type=blkvolocid['block_vol_attachment_type'][i],
             instance_id=getinst_data.id,
             volume_id=get_blockvol_data.id))
     print('Attached Block Volume to VM')
